@@ -56,11 +56,11 @@ class DataManager {
 
 The database instance can then be access throughout the codebase using the class property: `DataManager.sharedInstance.database`.
 
-##  Encryption
+##  Database Configuration
 
 [//]: # (TODO: add content about encryption: algorithm, security level...)
 
-The following example demonstrates how to create a database with an encryption key (or open an existing one).
+The [`DatabaseConfiguration`](http://docs.couchbase.com/mobile/2.0/couchbase-lite-swift/db021/Structs/DatabaseConfiguration.html) object can be used to provide different options during the database creation. The following example demonstrates how to create a database with an encryption key (or open an existing one).
 
 ```swift
 var dbConfig = DatabaseConfiguration()
